@@ -6,13 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
-    <div class="test">
-        aaaaaaaaaaa
+    <header>
+        <div class="header__logo">
+            <div class="header__logo--left">
+                <img src="./assets/img/SS_Logo.webp" alt="">
+            </div>
+            <div class="header__logo--right">
+                <img src="./assets/img/binz_logo.webp" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="heading__title">
+            <a href="index.html">Trang chủ</a><span>// thông tin sản phẩm</span>
+        </div>
+        <div class="detail">
+
+        </div>
+        <div class="recom">
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer__main">
+            <div class="footer__navigate">
+                <a href="#">Terms & conditions</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Contact us</a>
+                <a href="#">Refund policy</a>
+            </div>
+            <div class="footer__logo">
+                <div class="footer__logo--img">
+                    <img src="./assets/img/SS_Logo.webp" alt="">
+                    <img src="./assets/img/binz_logo.webp" alt="">
+                </div>
+                <div class="footer__logo--text">
+                    Copyright @ 2021 by SpaceSpeakers. All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mask">
+        <div class="mask__text">
+            <p>Trải nghiệm trọn vẹn nhất trên app VinID</p>
+        </div>
+        <div class="mask__btn">
+            <button>Mở</button>
+        </div>
     </div>
+
+    <script src="./data/detailproduct.js"></script>
     <script src="./assets/js/product.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.detail').slick();
+        })
+    </script>
     <!-- <script src="./assets/js/productmain.js"></script> -->
 </body>
 
