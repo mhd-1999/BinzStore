@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Binzstore</title>
 
+    <link rel="shortcut icon" href="https://cdn-vincart.vinid.net/cep/spacespeaker/ss_logo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/vendor/slick.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
@@ -22,14 +27,158 @@
     </header>
     <!-- main -->
     <main>
-        <div class="heading__title">
-            <a href="index.html">Trang chủ</a><span>// thông tin sản phẩm</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading__title">
+                        <a href="index.html">Trang chủ</a><span>//<span></span>thông tin sản phẩm</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="detail">
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="detail-info">
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="detail">
+        <div class="modal-banking" id="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-text">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Hướng dẫn chuyển khoản tới SpaceSpeakers</h2>
+                            </div>
+                            <div class="col-12">
+                                <p>Bạn có thể dùng bất kỳ ngân hàng nào để chuyển tiền tới tài khoản sau:</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <p>Tên ngân hàng nhận</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <span>
+                                    Ngân hàng Quân Đội MB Bank
+                                </span>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <p>Chủ tài khoản</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <span>
+                                    Lưu Vũ Nhật Tân
+                                </span>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <p>Số tài khoản</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <span>
+                                    9035079469999
+                                </span>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <p>Nội dung chuyển khoản (bắt buộc)</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <span>
+                                    Số điện thoại - Mã hàng hóa - Số lượng
+                                </span>
+                            </div>
+                            <div class="col-12">
+                                <h6>* Trong đó, Mã hàng hóa được quy định ở mục Mô tả sản phẩm</h6>
+                                <h6>** Khi nhận được chuyển khoản, chúng tôi sẽ gọi cho bạn theo số điện thoại trên để xác nhận và gửi hàng. Nếu cần hỗ trợ, bạn vui lòng liên hệ với VinID qua hotline 1900 6959</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
-        <div class="recom">
+        <div class="modal-vin" id="modalV">
+            <div class="modal-content">
+                <span class="closeV">&times;</span>
+                <div class="bottom">
+                    <div class="bottom__main">
+                        <div class="bottom__main--detail">
+                            <div class="bottom__title">
+                                <h1>Hướng dẫn mua sản phẩm qua VinID</h1>
+                            </div>
+                            <div class="bottom__content">
+                                <div class="content__card">
+                                    <div class="content__card--title">
+                                        <p>//01</p>
+                                        <h4>Mở kho ứng dụng và tải app VinID</h4>
+                                    </div>
+                                    <div class="content__card--img">
+                                        <img src="./assets/img/Huongdan1.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="content__card">
+                                    <div class="content__card--title">
+                                        <p>//02</p>
+                                        <h4>Bấm vào banner Binz ở trang chủ</h4>
+                                    </div>
+                                    <div class="content__card--img">
+                                        <img src="./assets/img/Huongdan2.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="content__card">
+                                    <div class="content__card--title">
+                                        <p>//03</p>
+                                        <h4>Chọn sản phẩm muốn mua </h4>
+                                    </div>
+                                    <div class="content__card--img">
+                                        <img src="./assets/img/Huongdan3.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="content__card">
+                                    <div class="content__card--title">
+                                        <p>//04</p>
+                                        <h4>Chọn kích thước, màu sắc và thanh toán</h4>
+                                    </div>
+                                    <div class="content__card--img">
+                                        <img src="./assets/img/Huongdan4.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom__tablet">
+                                <div class="bottom__tablet--text">
+                                    <p>Mua hàng qua</p>
+                                    <p>app <span>VinID</span></p>
+                                </div>
+                                <div class="bottom__tablet--btn">
+                                    <button>
+                                        <span>Mở app ngay</span>
+                                        <i class="fa fa-arrow-right"></i>
+                                </button>
+                                </div>
+                            </div>
+                            <div class="bottom__desk">
+                                <div class="bottom__desk--item">
+                                    <p>Quét mã QR để mở app VinID</p>
+                                </div>
+                                <div class="bottom__desk--item">
+                                    <div class="desk__item--link">
+                                        <a href=""><img src="./assets/img/Footer-download.webp" alt=""></a>
+                                        <a href=""><img src="./assets/img/Footer-download (1).webp" alt=""></a>
+                                    </div>
+                                    <img class="qr-code" src="./assets/img/qr-code.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -59,14 +208,11 @@
             <button>Mở</button>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/vendor/slick.min.js"></script>
     <script src="./data/detailproduct.js"></script>
     <script src="./assets/js/product.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.detail').slick();
-        })
-    </script>
+
     <!-- <script src="./assets/js/productmain.js"></script> -->
 </body>
 

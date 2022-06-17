@@ -8,16 +8,18 @@ const app = {
     renderProdcut: function() {
         $(".product__list").innerHTML = this.products.map((product) => {
             if (product.pricefirst != "") {
-                return `                
+                return `
+                
                 <div class="product__item col-lg-12 col-xl-4">
                     <section>
                         <img src="./assets/img/Frame 4656843.webp" alt="">
                     </section>
+                    <a href="./product.html?id=${product.id}">
                     <div class="product__img">
                         <img src="${product.img}" alt="">
                     </div>
                     <div class="product__text">
-                        <h3><a href="./product.html?id=${product.id}">${product.name}</a></h3>
+                        <h3>${product.name}</h3>
                     </div>
                     <div class="product__option">
                         <div class="product__option--1">
@@ -29,7 +31,10 @@ const app = {
                             <p>${product.pricesecond}</p>
                         </div>
                     </div>
-                </div>`;
+                    </a>
+                </div>
+                               
+                `;
             } else if (product.pricefirst == "") {
                 return `   
                     <div class="product__item col-lg-12 col-xl-4">
